@@ -9,10 +9,7 @@ function App() {
 
   useEffect(() => {
     const elements = Array.from(document.querySelectorAll('[data-reveal]'))
-    if (!('IntersectionObserver' in window)) {
-      elements.forEach((el) => el.classList.add('reveal--visible'))
-      return
-    }
+
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -32,10 +29,9 @@ function App() {
 
   return (
     <div className="app">
-      {/* Header */}
       <header className="header">
         <div className="header-container">
-          <div className="logo">Ahmed Hamza</div>
+          <a className="logo" href={'#home'}>Ahmed Hamza</a>
           <nav className="nav">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -53,7 +49,7 @@ function App() {
         <div className="hero-container">
           <div className="hero-content reveal" data-reveal>
             <h1 className="hero-title">Master English for exams, work, and real life.</h1>
-            <p className="hero-description">IELTS, TOEFL & SAT preparation, professional English, and everyday fluency.</p>
+            <p className="hero-description">IELTS, TOEFL & SAT preparation, professional English, and everyday english.</p>
             <a className="btn-primary" href={whatsappUrl} target="_blank" rel="noreferrer">
               Book a free meeting
             </a>
@@ -80,7 +76,7 @@ function App() {
             </div>
             <div className="stat-item">
               <div className="stat-number">78,900+</div>
-              <div className="stat-label">Social followers</div>
+              <div className="stat-label">Tiktok followers</div>
             </div>
           </div>
         </div>
@@ -123,16 +119,16 @@ function App() {
           </h2>
           <div className="services-grid">
             <button className="service-btn reveal" data-reveal>
-              Business English
-            </button>
-            <button className="service-btn reveal reveal-delay-1" data-reveal>
-              TOEFL Preparation
-            </button>
-            <button className="service-btn reveal reveal-delay-2" data-reveal>
               IELTS Preparation
             </button>
-            <button className="service-btn reveal reveal-delay-3" data-reveal>
+            <button className="service-btn reveal reveal-delay-1" data-reveal>
               SAT Preparation
+            </button>
+            <button className="service-btn reveal reveal-delay-2" data-reveal>
+              TOEFL Preparation
+            </button>
+            <button className="service-btn reveal reveal-delay-3" data-reveal>
+              Business English
             </button>
           </div>
         </div>
@@ -147,7 +143,7 @@ function App() {
           <div className="benefits-box reveal" data-reveal>
             <ul className="benefits-list">
               <li>10+ years teaching experience</li>
-              <li>500+ students worldwide</li>
+              <li>500+ students helped</li>
               <li>Personalized lesson plans</li>
               <li>Clear exam strategies</li>
               <li>Friendly, supportive teaching style</li>
@@ -167,7 +163,7 @@ function App() {
           </h2>
           <div className="testimonials-grid">
             <div className="testimonial-card reveal" data-reveal>
-              <p className="testimonial-quote">"I got a 7 after Mr Ahmed taught me. His strategies made the difference!"</p>
+              <p className="testimonial-quote">"I got a 7 overall after Mr Ahmed taught me. His strategies made the difference!"</p>
               <div className="testimonial-meta">
                 <div className="avatar">A</div>
                 <div className="meta-text">
