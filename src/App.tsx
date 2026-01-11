@@ -3,11 +3,6 @@ import { Link } from 'wouter';
 import './App.css'
 
 function App() {
-  const whatsappMessage = encodeURIComponent(
-    'I want to book a free session, what time are you available?',
-  )
-  const whatsappUrl = `https://wa.me/971528750021?text=${whatsappMessage}`
-
 
   useEffect(() => {
     const elements = Array.from(document.querySelectorAll('[data-reveal]'))
@@ -157,29 +152,37 @@ function App() {
         </div>
       </section>
 
-  {/*new section */}
+  {/* FAQ Section */}
       <section className="why-learn">
         <div className="section-container">
           <h2 className="section-title reveal" data-reveal>
-            What to Expect in Your First Trial Lesson
+            FAQS
           </h2>
-          <p className={"benefits-box2"}>
-            <h2 className={"first-h2"}>How long is the free trial lesson?</h2>
-            The free trial lesson lasts 20–30 minutes and is conducted online via Zoom.<br/>
-            <h3>What happens during the trial lesson?</h3>
+          <div className="faq-grid">
+            <div className="faq-card reveal" data-reveal>
+              <h3 className="faq-question">How long is the free trial lesson?</h3>
+              <p className="faq-answer">The free trial lesson lasts 20–30 minutes and is conducted online via Zoom.</p>
+            </div>
 
-            <li>Level Assessment: A quick check to gauge your proficiency and learning needs.</li>
-            <li>Goal Discussion: We’ll discuss your goals, whether for IELTS, TOEFL, SAT, general English, or university-level English.</li>
-            <li>Teaching Demo: A mini lesson tailored to your level and goals to showcase my teaching style.</li>
+            <div className="faq-card reveal" data-reveal>
+              <h3 className="faq-question">What happens during the trial lesson?</h3>
+              <ul className="faq-answer">
+                <li>Level Assessment: A quick check to gauge your proficiency and learning needs.</li>
+                <li>Goal Discussion: We'll discuss your goals, whether for IELTS, TOEFL, SAT, general English, or university-level English.</li>
+                <li>Teaching Demo: A mini lesson tailored to your level and goals to showcase my teaching style.</li>
+              </ul>
+            </div>
 
-            <h3>Why is the Trial Lesson Beneficial?</h3>
-            <ul>
-              <li>Clarity on Your English Level: Understand your skills in speaking and writing.</li>
-              <li>Personalized Learning Path: Get recommendations based on your goals.</li>
-              <li>Engaging Demo: Experience how my approach adapts to your needs.</li>
-            </ul>
-          </p>
+            <div className="faq-card reveal" data-reveal>
+              <h3 className="faq-question">Why is the Trial Lesson Beneficial?</h3>
+              <ul className="faq-answer">
+                <li>Clarity on Your English Level: Understand your skills in speaking and writing.</li>
+                <li>Personalized Learning Path: Get recommendations based on your goals.</li>
+                <li>Engaging Demo: Experience how my approach adapts to your needs.</li>
+              </ul>
+            </div>
           </div>
+        </div>
       </section>
 
       {/* Testimonials Section */}
@@ -230,9 +233,9 @@ function App() {
             <h3 className="cta-title">Ready to improve your English?</h3>
             <p className="cta-subtitle">Book a free meeting and start your journey today.</p>
           </div>
-          <a className="btn-secondary" href={whatsappUrl} target="_blank" rel="noreferrer">
+          <Link href="/book a meeting" className="btn-secondary">
             Book a free meeting
-          </a>
+          </Link>
         </div>
       </section>
 

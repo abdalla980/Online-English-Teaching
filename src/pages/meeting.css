@@ -1,0 +1,122 @@
+.meeting-page {
+  min-height: 100vh;
+  background-color: #e9ecef;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meeting-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #214b6e;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  color: #1a3a52;
+  transform: translateX(-4px);
+}
+
+.meeting-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.meeting-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #214b6e;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.meeting-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.meeting-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #343a40;
+}
+
+.form-input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: white;
+  color: #343a40;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #214b6e;
+  box-shadow: 0 0 0 3px rgba(33, 75, 110, 0.1);
+}
+
+.form-input::placeholder {
+  color: #adb5bd;
+}
+
+.meeting-submit-btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .meeting-page {
+    padding: 2rem 1rem;
+  }
+
+  .meeting-card {
+    padding: 2rem;
+  }
+
+  .meeting-title {
+    font-size: 2rem;
+  }
+
+  .meeting-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
