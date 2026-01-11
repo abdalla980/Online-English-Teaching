@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Link } from 'wouter';
 import './App.css'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     'I want to book a free session, what time are you available?',
   )
   const whatsappUrl = `https://wa.me/971528750021?text=${whatsappMessage}`
+
 
   useEffect(() => {
     const elements = Array.from(document.querySelectorAll('[data-reveal]'))
@@ -38,9 +40,9 @@ function App() {
             <a href="#reviews">Reviews</a>
             <a href="#contact">Contact</a>
           </nav>
-          <a className="btn-primary" href={whatsappUrl} target="_blank" rel="noreferrer">
+          <Link href="/book a meeting" className="btn-primary">
             Book a free meeting
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -50,9 +52,9 @@ function App() {
           <div className="hero-content reveal" data-reveal>
             <h1 className="hero-title">Master English for exams, work, and real life.</h1>
             <p className="hero-description">IELTS, TOEFL & SAT preparation, professional English, and everyday english.</p>
-            <a className="btn-primary" href={whatsappUrl} target="_blank" rel="noreferrer">
+            <Link href="/book a meeting" className="btn-primary">
               Book a free meeting
-            </a>
+            </Link>
           </div>
           <div className="hero-image reveal reveal-delay-1" data-reveal>
             <div className="profile-placeholder">
@@ -67,7 +69,7 @@ function App() {
         <div className="stats-card reveal" data-reveal>
           <div className="stats-container">
             <div className="stat-item">
-              <div className="stat-number">10+</div>
+              <div className="stat-number">20+</div>
               <div className="stat-label">Years of Teaching</div>
             </div>
             <div className="stat-item">
@@ -142,7 +144,7 @@ function App() {
           </h2>
           <div className="benefits-box reveal" data-reveal>
             <ul className="benefits-list">
-              <li>10+ years teaching experience</li>
+              <li>20+ years teaching experience</li>
               <li>500+ students helped</li>
               <li>Personalized lesson plans</li>
               <li>Clear exam strategies</li>
@@ -153,6 +155,31 @@ function App() {
             </ul>
           </div>
         </div>
+      </section>
+
+  {/*new section */}
+      <section className="why-learn">
+        <div className="section-container">
+          <h2 className="section-title reveal" data-reveal>
+            What to Expect in Your First Trial Lesson
+          </h2>
+          <p className={"benefits-box2"}>
+            <h2 className={"first-h2"}>How long is the free trial lesson?</h2>
+            The free trial lesson lasts 20–30 minutes and is conducted online via Zoom.<br/>
+            <h3>What happens during the trial lesson?</h3>
+
+            <li>Level Assessment: A quick check to gauge your proficiency and learning needs.</li>
+            <li>Goal Discussion: We’ll discuss your goals, whether for IELTS, TOEFL, SAT, general English, or university-level English.</li>
+            <li>Teaching Demo: A mini lesson tailored to your level and goals to showcase my teaching style.</li>
+
+            <h3>Why is the Trial Lesson Beneficial?</h3>
+            <ul>
+              <li>Clarity on Your English Level: Understand your skills in speaking and writing.</li>
+              <li>Personalized Learning Path: Get recommendations based on your goals.</li>
+              <li>Engaging Demo: Experience how my approach adapts to your needs.</li>
+            </ul>
+          </p>
+          </div>
       </section>
 
       {/* Testimonials Section */}
