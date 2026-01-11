@@ -56,7 +56,7 @@ function App() {
           </div>
           <div className="hero-image reveal reveal-delay-1" data-reveal>
             <div className="profile-placeholder">
-              <img className="profile-img" src="/channels4_profile.jpg" alt="Ahmed Hamza" loading="eager" />
+              <img className="profile-img" src="/ahmed.png" alt="Ahmed Hamza" loading="eager" />
             </div>
           </div>
         </div>
