@@ -46,7 +46,7 @@ function App() {
         <div className="hero-container">
           <div className="hero-content reveal" data-reveal>
             <h1 className="hero-title">Master English for exams, work, and real life.</h1>
-            <p className="hero-description">IELTS, TOEFL & SAT preparation, professional English, and everyday english.</p>
+            <p className="hero-description">IELTS, TOEFL & SAT preparation, professional English, and everyday English.</p>
             <Link href="/book a meeting" className="btn-primary">
               Book a free meeting
             </Link>
